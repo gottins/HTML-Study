@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <header class="header"></header>
+  <header class="header">
+    <img 
+    src="img\logo.png" 
+    alt="logo"
+    style="width: 200px;"/>
+  </header>
 
   <div class="discription">説明</div>
 
@@ -137,6 +142,28 @@
      />
      <p>game4</p>
   </div>
+
+  <div class="kaitouran">
+    <form>
+      <div><input type="text" name="名前"/></div>
+      
+      <div>
+        <select name="性別">
+          <option value="1">無回答</option>
+          <option value="2">男性</option>
+          <option value="3">女性</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="text" />
+
+        <textarea name="テキストエリア"  cols="30" rows="10"></textarea>
+
+        <input type="submit" name="名前" value="送信" />
+      </div>
+    </form>
+  </div>
 </div>
   <style>
     .header {
@@ -187,6 +214,13 @@
       justify-content: center;
       align-items: center;
       margin: 30px;
+    }
+
+    .kaitouran{
+      background-color: bisque;
+      height: 500px;
+      width: 500px;
+      display: flex;
     }
   </style>
 </html>
