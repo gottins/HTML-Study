@@ -10,11 +10,12 @@
     <img 
     src="img\logo.png" 
     alt="logo"
-    style="width: 200px;"/>
+    style="width: 100px;"/>
   </header>
 
-  <div class="discription">説明</div>
-
+  <div class="discription">TameOCA</div>
+  <div class="member-container">
+    <p>member<br /></p>
   <div class="members">
     <div class="member">
       <img
@@ -107,64 +108,66 @@
       <p>member10</p>
     </div>
   </div>
+ </div>
 
+ <div class="gametitles-container">
+  <p class="text">Gametitle</p>
   <div class="gametitles">
-
-  <div class="gametitle">
-    <img src="img\game\game_01.jpeg"
-     alt="logo"
-     sttle="wibth: 50px"
-     style="position: center"
-     />
-     <p>game1</p>
-  </div>
-  <div class="gametitle">
-    <img src="img\game\game_02.jpeg"
-     alt="logo"
-     sttle="wibth: 50px"
-     style="position: center"
-     />
-     <p>game2</p>
-  </div>
-  <div class="gametitle">
-    <img src="img\game\game_03.jpeg"
-     alt="logo"
-     sttle="wibth: 50px"
-     style="position: center"
-     />
-     <p>game3</p>
-  </div>
-  <div class="gametitle">
-    <img src="img\game\game_04.jpeg"
-     alt="logo"
-     sttle="wibth: 50px"
-     style="position: center"
-     />
-     <p>game4</p>
-  </div>
-
-  <div class="kaitouran">
+    <div class="gametitle">
+      <img src="img\game\game_01.jpeg"
+      alt="logo"
+      sttle="wibth: 50px"
+      style="position: center"
+      />
+      <p>game1</p>
+    </div>
+    <div class="gametitle">
+      <img src="img\game\game_02.jpeg"
+      alt="logo"
+      sttle="wibth: 50px"
+      style="position: center"
+      />
+      <p>game2</p>
+    </div>
+    <div class="gametitle">
+      <img src="img\game\game_03.jpeg"
+      alt="logo"
+      sttle="wibth: 50px"
+      style="position: center"
+      />
+      <p>game3</p>
+    </div>
+    <div class="gametitle">
+      <img src="img\game\game_04.jpeg"
+      alt="logo"
+      sttle="wibth: 50px"
+      style="position: center"
+      />
+      <p>game4</p>
+    </div>
+</div>
+    <div class="kaitouran">
     <form>
-      <div><input type="text" name="名前"/></div>
+      <input class="name-input" type="text" name="名前"/>
       
-      <div>
-        <select name="性別">
+
+        <select class="gender-input" name="性別">
           <option value="1">無回答</option>
           <option value="2">男性</option>
           <option value="3">女性</option>
         </select>
-      </div>
+  
 
       <div>
         <input type="text" />
-
+      </div>
         <textarea name="テキストエリア"  cols="30" rows="10"></textarea>
 
         <input type="submit" name="名前" value="送信" />
-      </div>
+
     </form>
   </div>
-</div>
+  </div>
   <style>
     .header {
       background-color: blueviolet;
@@ -172,12 +175,16 @@
     }
 
     .discription {
-      background-color: aqua;
+      background-image:url(img/about.jpg);
       height: 200px;
+      color: aquamarine;
+    }
+
+    .member-container {
+      background-color: chartreuse;
     }
 
     .members {
-      background-color: chartreuse;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -196,12 +203,21 @@
       margin: 30px;
     }
 
-    .gametitles {
+    .gametitles-container{
       background-color: blueviolet;
+    }
+
+    .gametitles {
       display: flex;
       flex-wrap: wrap;
      align-items: center;
      justify-content: space-around;
+    }
+
+    .text{
+      color: blue;
+      display: block;
+      
     }
 
     .gametitle {
@@ -219,8 +235,15 @@
     .kaitouran{
       background-color: bisque;
       height: 500px;
-      width: 500px;
       display: flex;
+    }
+
+    .name-input {
+      display: block;
+    }
+
+    .gender-input {
+      display: block;
     }
   </style>
 </html>
